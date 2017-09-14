@@ -1,0 +1,27 @@
+[t6]
+FileName2=t3_7_signoff.gif
+FileName5=t3_4_in_flights.gif
+FileName4=t3_5_button_next.gif
+FileName7=t1_2_mer_login.gif
+FileName6=t3_3_itinerary.gif
+FileName9=t1_0_hp_logo.png
+FileName8=t1_1_webtours.png
+RequestBodyFile=t6_RequestBody.txt
+ContentType=application/xml
+URL1=http://ie9cvlist.ie.microsoft.com/IE9CompatViewList.xml
+URL2=http://127.0.0.1:1080/WebTours/images/signoff.gif
+URL3=http://127.0.0.1:1080/WebTours/images/home.gif
+ResponseHeaderFile=t6_ResponseHeader.txt
+URL4=http://127.0.0.1:1080/WebTours/images/button_next.gif
+URL5=http://127.0.0.1:1080/WebTours/images/in_flights.gif
+URL6=http://127.0.0.1:1080/WebTours/images/itinerary.gif
+URL7=http://127.0.0.1:1080/WebTours/images/mer_login.gif
+URL8=http://127.0.0.1:1080/WebTours/images/webtours.png
+URL9=http://127.0.0.1:1080/WebTours/images/hp_logo.png
+SnapshotXmlFile=snapshot_6.xml
+RequestHeaderFile=t6_RequestHeader.txt
+SaveSnapshotResources=1
+Total=9
+StepName=Url: IE9CompatViewList.xml
+FileName1=t6.xml
+FileName3=t3_6_home.gif

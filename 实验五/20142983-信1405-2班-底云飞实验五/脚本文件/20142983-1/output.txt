@@ -1,0 +1,92 @@
+虚拟用户脚本已于 : 2017/6/2 11:29:41 启动
+正在开始操作 vuser_init。
+Windows 7 的 LoadRunner 12.50.0 的 Web Turbo 回放; 内部版本号: 1096 (六月 02 2017 16:55:24)  	[MsgId: MMSG-27143]
+运行模式: HTML  	[MsgId: MMSG-26993]
+回放用户代理: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)  	[MsgId: MMSG-26988]
+运行时设置文件: "C:\Users\Administrator\Desktop\20142983-1\\default.cfg"  	[MsgId: MMSG-27141]
+正在结束操作 vuser_init。
+正在运行 Vuser...
+正在开始迭代 1。
+每个服务器的最大并发连接数: 6  	[MsgId: MMSG-26989]
+正在开始操作 Action。
+Action.c(4): web_url("index.htm") 已启动  	[MsgId: MMSG-26355]
+Action.c(4): 在“http://127.0.0.1:1080/WebTours/index.htm”中检测到非资源“http://127.0.0.1:1080/WebTours/header.html”  	[MsgId: MMSG-26574]
+Action.c(4): 在“http://127.0.0.1:1080/WebTours/index.htm”中检测到非资源“http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=true”  	[MsgId: MMSG-26574]
+Action.c(4): 在 HTML“http://127.0.0.1:1080/WebTours/header.html”中找到资源“http://127.0.0.1:1080/WebTours/images/hp_logo.png”  	[MsgId: MMSG-26659]
+Action.c(4): 在 HTML“http://127.0.0.1:1080/WebTours/header.html”中找到资源“http://127.0.0.1:1080/WebTours/images/webtours.png”  	[MsgId: MMSG-26659]
+Action.c(4): 在“http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=true”中检测到非资源“http://127.0.0.1:1080/cgi-bin/nav.pl?in=home”  	[MsgId: MMSG-26574]
+Action.c(4): 在“http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=true”中检测到非资源“http://127.0.0.1:1080/WebTours/home.html”  	[MsgId: MMSG-26574]
+Action.c(4): 在 HTML“http://127.0.0.1:1080/cgi-bin/nav.pl?in=home”中找到资源“http://127.0.0.1:1080/WebTours/images/mer_login.gif”  	[MsgId: MMSG-26659]
+Action.c(4): web_url("index.htm") 已成功，10080 个正文字节，2371 个标头字节，24 个分块开销字节  	[MsgId: MMSG-26385]
+Action.c(14): 通知: 事务 "login" 已启动。
+Action.c(20): web_submit_data("login.pl") 已启动  	[MsgId: MMSG-26355]
+Action.c(20): web_submit_data("login.pl") 已成功，795 个正文字节，228 个标头字节，12 个分块开销字节  	[MsgId: MMSG-26385]
+Action.c(37): 通知: 事务“login”以“Pass”状态结束 (持续时间: 0.1773 浪费时间: 0.0021)。
+Action.c(41): 通知: 事务 "dingpiao" 已启动。
+Action.c(43): web_url("Search Flights Button") 已启动  	[MsgId: MMSG-26355]
+Action.c(43): 在“http://127.0.0.1:1080/cgi-bin/welcome.pl?page=search”中检测到非资源“http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=flights”  	[MsgId: MMSG-26574]
+Action.c(43): 在“http://127.0.0.1:1080/cgi-bin/welcome.pl?page=search”中检测到非资源“http://127.0.0.1:1080/cgi-bin/reservations.pl?page=welcome”  	[MsgId: MMSG-26574]
+Action.c(43): 在 HTML“http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=flights”中找到资源“http://127.0.0.1:1080/WebTours/images/in_flights.gif”  	[MsgId: MMSG-26659]
+Action.c(43): 在 HTML“http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=flights”中找到资源“http://127.0.0.1:1080/WebTours/images/itinerary.gif”  	[MsgId: MMSG-26659]
+Action.c(43): 在 HTML“http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=flights”中找到资源“http://127.0.0.1:1080/WebTours/images/home.gif”  	[MsgId: MMSG-26659]
+Action.c(43): 在 HTML“http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=flights”中找到资源“http://127.0.0.1:1080/WebTours/images/signoff.gif”  	[MsgId: MMSG-26659]
+Action.c(43): 在 HTML“http://127.0.0.1:1080/cgi-bin/reservations.pl?page=welcome”中找到资源“http://127.0.0.1:1080/WebTours/images/button_next.gif”  	[MsgId: MMSG-26659]
+Action.c(43): web_url("Search Flights Button") 已成功，10000 个正文字节，2212 个标头字节，43 个分块开销字节  	[MsgId: MMSG-26385]
+Action.c(53): web_set_sockets_option 已启动  	[MsgId: MMSG-26355]
+Action.c(53): web_set_sockets_option 已成功  	[MsgId: MMSG-26392]
+Action.c(57): web_url("Search Flights Button_2") 已启动  	[MsgId: MMSG-26355]
+Action.c(57): 在“http://127.0.0.1:1080/cgi-bin/welcome.pl?page=search”中检测到非资源“http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=flights”  	[MsgId: MMSG-26574]
+Action.c(57): 在“http://127.0.0.1:1080/cgi-bin/welcome.pl?page=search”中检测到非资源“http://127.0.0.1:1080/cgi-bin/reservations.pl?page=welcome”  	[MsgId: MMSG-26574]
+Action.c(57): 资源“http://127.0.0.1:1080/WebTours/images/in_flights.gif”已在缓存中，不会再次下载  	[MsgId: MMSG-26655]
+Action.c(57): 资源“http://127.0.0.1:1080/WebTours/images/itinerary.gif”已在缓存中，不会再次下载  	[MsgId: MMSG-26655]
+Action.c(57): 资源“http://127.0.0.1:1080/WebTours/images/home.gif”已在缓存中，不会再次下载  	[MsgId: MMSG-26655]
+Action.c(57): 资源“http://127.0.0.1:1080/WebTours/images/signoff.gif”已在缓存中，不会再次下载  	[MsgId: MMSG-26655]
+Action.c(57): 资源“http://127.0.0.1:1080/WebTours/images/button_next.gif”已在缓存中，不会再次下载  	[MsgId: MMSG-26655]
+Action.c(57): web_url("Search Flights Button_2") 已成功，6344 个正文字节，725 个标头字节，43 个分块开销字节  	[MsgId: MMSG-26385]
+Action.c(67): web_url("Search Flights Button_3") 已启动  	[MsgId: MMSG-26355]
+Action.c(67): 在“http://127.0.0.1:1080/cgi-bin/welcome.pl?page=search”中检测到非资源“http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=flights”  	[MsgId: MMSG-26574]
+Action.c(67): 在“http://127.0.0.1:1080/cgi-bin/welcome.pl?page=search”中检测到非资源“http://127.0.0.1:1080/cgi-bin/reservations.pl?page=welcome”  	[MsgId: MMSG-26574]
+Action.c(67): 资源“http://127.0.0.1:1080/WebTours/images/in_flights.gif”已在缓存中，不会再次下载  	[MsgId: MMSG-26655]
+Action.c(67): 资源“http://127.0.0.1:1080/WebTours/images/itinerary.gif”已在缓存中，不会再次下载  	[MsgId: MMSG-26655]
+Action.c(67): 资源“http://127.0.0.1:1080/WebTours/images/home.gif”已在缓存中，不会再次下载  	[MsgId: MMSG-26655]
+Action.c(67): 资源“http://127.0.0.1:1080/WebTours/images/signoff.gif”已在缓存中，不会再次下载  	[MsgId: MMSG-26655]
+Action.c(67): 资源“http://127.0.0.1:1080/WebTours/images/button_next.gif”已在缓存中，不会再次下载  	[MsgId: MMSG-26655]
+Action.c(67): web_url("Search Flights Button_3") 已成功，6344 个正文字节，725 个标头字节，43 个分块开销字节  	[MsgId: MMSG-26385]
+Action.c(77): web_url("IE9CompatViewList.xml") 已启动  	[MsgId: MMSG-26355]
+Action.c(77): web_url("IE9CompatViewList.xml") 已成功，13793 个正文字节，467 个标头字节  	[MsgId: MMSG-26386]
+Action.c(87): web_url("welcome.pl") 已启动  	[MsgId: MMSG-26355]
+Action.c(87): 在“http://127.0.0.1:1080/cgi-bin/welcome.pl?page=search”中检测到非资源“http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=flights”  	[MsgId: MMSG-26574]
+Action.c(87): 在“http://127.0.0.1:1080/cgi-bin/welcome.pl?page=search”中检测到非资源“http://127.0.0.1:1080/cgi-bin/reservations.pl?page=welcome”  	[MsgId: MMSG-26574]
+Action.c(87): 资源“http://127.0.0.1:1080/WebTours/images/in_flights.gif”已在缓存中，不会再次下载  	[MsgId: MMSG-26655]
+Action.c(87): 资源“http://127.0.0.1:1080/WebTours/images/itinerary.gif”已在缓存中，不会再次下载  	[MsgId: MMSG-26655]
+Action.c(87): 资源“http://127.0.0.1:1080/WebTours/images/home.gif”已在缓存中，不会再次下载  	[MsgId: MMSG-26655]
+Action.c(87): 资源“http://127.0.0.1:1080/WebTours/images/signoff.gif”已在缓存中，不会再次下载  	[MsgId: MMSG-26655]
+Action.c(87): 资源“http://127.0.0.1:1080/WebTours/images/button_next.gif”已在缓存中，不会再次下载  	[MsgId: MMSG-26655]
+Action.c(87): web_url("welcome.pl") 已成功，6344 个正文字节，719 个标头字节，24 个分块开销字节  	[MsgId: MMSG-26385]
+Action.c(99): web_submit_data("reservations.pl") 已启动  	[MsgId: MMSG-26355]
+Action.c(99): 资源“http://127.0.0.1:1080/WebTours/images/button_next.gif”已在缓存中，不会再次下载  	[MsgId: MMSG-26655]
+Action.c(99): web_submit_data("reservations.pl") 已成功，2438 个正文字节，255 个标头字节，12 个分块开销字节  	[MsgId: MMSG-26385]
+Action.c(123): web_submit_data("reservations.pl_2") 已启动  	[MsgId: MMSG-26355]
+Action.c(123): 资源“http://127.0.0.1:1080/WebTours/images/button_next.gif”已在缓存中，不会再次下载  	[MsgId: MMSG-26655]
+Action.c(123): web_submit_data("reservations.pl_2") 已成功，2634 个正文字节，255 个标头字节，12 个分块开销字节  	[MsgId: MMSG-26385]
+Action.c(141): web_submit_data("reservations.pl_3") 已启动  	[MsgId: MMSG-26355]
+Action.c(141): 在 HTML“http://127.0.0.1:1080/cgi-bin/reservations.pl”中找到资源“http://127.0.0.1:1080/WebTours/images/bookanother.gif”  	[MsgId: MMSG-26659]
+Action.c(141): web_submit_data("reservations.pl_3") 已成功，3269 个正文字节，585 个标头字节，12 个分块开销字节  	[MsgId: MMSG-26385]
+Action.c(170): web_submit_data("reservations.pl_4") 已启动  	[MsgId: MMSG-26355]
+Action.c(170): 资源“http://127.0.0.1:1080/WebTours/images/button_next.gif”已在缓存中，不会再次下载  	[MsgId: MMSG-26655]
+Action.c(170): web_submit_data("reservations.pl_4") 已成功，4246 个正文字节，255 个标头字节，19 个分块开销字节  	[MsgId: MMSG-26385]
+Action.c(183): 通知: 事务“dingpiao”以“Pass”状态结束 (持续时间: 4.3582 浪费时间: 0.0624)。
+Action.c(187): 通知: 事务 "tuichu" 已启动。
+Action.c(189): web_url("SignOff Button") 已启动  	[MsgId: MMSG-26355]
+Action.c(189): 在“http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1”中检测到非资源“http://127.0.0.1:1080/cgi-bin/nav.pl?in=home”  	[MsgId: MMSG-26574]
+Action.c(189): 在“http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=1”中检测到非资源“http://127.0.0.1:1080/WebTours/home.html”  	[MsgId: MMSG-26574]
+Action.c(189): 从缓存中为“http://127.0.0.1:1080/WebTours/home.html”检索数据  	[MsgId: MMSG-26558]
+Action.c(189): 资源“http://127.0.0.1:1080/WebTours/images/mer_login.gif”已在缓存中，不会再次下载  	[MsgId: MMSG-26655]
+Action.c(189): web_url("SignOff Button") 已成功，2175 个正文字节，582 个标头字节，24 个分块开销字节  	[MsgId: MMSG-26385]
+Action.c(199): 通知: 事务“tuichu”以“Pass”状态结束 (持续时间: 0.4064 浪费时间: 0.0019)。
+正在结束操作 Action。
+正在结束迭代 1。
+正在结束 Vuser...
+正在开始操作 vuser_end。
+正在结束操作 vuser_end。
+Vuser 已终止。

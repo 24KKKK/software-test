@@ -1,0 +1,9 @@
+c:\users\administrator\documents\visual studio 2015\Projects\判断星期\判断星期\bin\Release\判断星期.exe.config
+c:\users\administrator\documents\visual studio 2015\Projects\判断星期\判断星期\bin\Release\判断星期.exe
+c:\users\administrator\documents\visual studio 2015\Projects\判断星期\判断星期\bin\Release\判断星期.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\判断星期\判断星期\obj\Release\判断星期.Form1.resources
+c:\users\administrator\documents\visual studio 2015\Projects\判断星期\判断星期\obj\Release\判断星期.Properties.Resources.resources
+c:\users\administrator\documents\visual studio 2015\Projects\判断星期\判断星期\obj\Release\判断星期.csproj.GenerateResource.Cache
+c:\users\administrator\documents\visual studio 2015\Projects\判断星期\判断星期\obj\Release\判断星期.exe
+c:\users\administrator\documents\visual studio 2015\Projects\判断星期\判断星期\obj\Release\判断星期.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\判断星期\判断星期\obj\Release\判断星期.csprojResolveAssemblyReference.cache

@@ -1,0 +1,11 @@
+[t6]
+FileName1=t6_IE9CompatViewList.xml
+URL1=http://ie9cvlist.ie.microsoft.com/IE9CompatViewList.xml
+Total=1
+ContentType=text/xml
+SnapshotXmlFile=snapshot_6.xml
+RequestHeaderFile=t6_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t6_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

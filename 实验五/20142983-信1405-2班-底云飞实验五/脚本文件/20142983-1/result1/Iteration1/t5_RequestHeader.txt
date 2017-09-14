@@ -1,0 +1,10 @@
+GET /cgi-bin/welcome.pl?page=search HTTP/1.1
+Referer: http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=flights
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN
+Accept: */*
+Connection: Keep-Alive
+Host: 127.0.0.1:1080
+Cookie: MSO=SID&1496374181
+

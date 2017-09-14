@@ -1,0 +1,2 @@
+"userSession=121212.982017011zcDtiQcpHzcfDHtAQpDfzfHf&username=jojo&password={PasswordParameter"
+"}&JSFormSubmit=off&login.x=59&login.y=10"

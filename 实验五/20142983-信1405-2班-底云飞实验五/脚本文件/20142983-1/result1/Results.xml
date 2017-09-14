@@ -1,0 +1,294 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Report
+[
+<!ELEMENT Report (General ,(Doc|BPT)) >
+<!ATTLIST Report ver CDATA #REQUIRED tmZone CDATA #REQUIRED>
+
+<!ELEMENT General ( DocLocation ) >
+<!ATTLIST General productName CDATA #REQUIRED productVer CDATA #REQUIRED os CDATA #REQUIRED host CDATA #REQUIRED>
+
+<!ELEMENT BPT (DName,Res,DVer?,TSet?,TInst?,NodeArgs,AdditionalInfo*,Doc*) >
+<!ATTLIST BPT rID ID #REQUIRED >
+
+<!ELEMENT Doc (DName,Res,DVer?,TSet?,TInst?,RunType?,DT?,AdditionalInfo*,Step*,DIter*,Step*,Action*,Summary?,TestMaintenanceSummary*,NodeArgs?) >
+<!ATTLIST Doc rID ID #REQUIRED type (Test|BC) "Test" productName CDATA #REQUIRED BCIter CDATA #IMPLIED >
+
+<!ELEMENT RunType ( #PCDATA )>
+<!ATTLIST RunType fmStep (False|True) "False" batch (False|True) "False" upDesc (False|True) "False" upChk (False|True) "False" upAS (False|True) "False">
+
+<!ELEMENT DName ( #PCDATA ) >
+
+<!ELEMENT Res ( #PCDATA ) >
+
+<!ELEMENT AdditionalInfo (AdditionalDataName,AdditionalDataValue ) >
+
+<!ELEMENT AdditionalDataName ( #PCDATA ) >
+
+<!ELEMENT AdditionalDataValue ( #PCDATA ) >
+
+<!ELEMENT DVer ( #PCDATA ) >
+
+<!ELEMENT TSet ( #PCDATA ) >
+
+<!ELEMENT TInst ( #PCDATA ) >
+
+<!ELEMENT DIter (Step?,Action+,Summary?,NodeArgs)>
+<!ATTLIST DIter rID ID #REQUIRED iterID CDATA #REQUIRED>
+
+<!ELEMENT DocLocation ( #PCDATA )>
+
+<!ELEMENT Action (AName,AIter*,(Step|HtmlStep|Action)*,Summary,ActionMaintenanceSummary*,NodeArgs ) >
+<!ATTLIST Action rID ID #REQUIRED>
+
+<!ELEMENT AIter ((Step|HtmlStep|Action)*,Summary?,NodeArgs) >
+<!ATTLIST AIter rID ID #REQUIRED iterID CDATA #REQUIRED>
+
+<!ELEMENT AName ( #PCDATA ) >
+
+<!ELEMENT TestMaintenanceSummary (ActionMaintenanceSummary) >
+<!ATTLIST TestMaintenanceSummary ObjectsAdded CDATA #REQUIRED ObjectsUpdated CDATA #REQUIRED StepsUpdated CDATA #REQUIRED StepsComments CDATA #REQUIRED><!ELEMENT ActionMaintenanceSummary (ObjectChange* ) >
+<!ATTLIST ActionMaintenanceSummary Action CDATA #REQUIRED Objects CDATA #REQUIRED Updated CDATA #REQUIRED LinesTotal CDATA #REQUIRED Added CDATA #REQUIRED LinesUpdated CDATA #REQUIRED>
+
+<!ELEMENT ObjectChange  (Hierarchy, PropertyChangeList* ) >
+<!ATTLIST ObjectChange Operation CDATA #IMPLIED OriginalRepository CDATA #IMPLIED>
+
+<!ELEMENT PropertyChangeList (PropertyDef) >
+
+<!ELEMENT PropertyDef (OriginalValue, NewValue) >
+<!ATTLIST PropertyDef PropName CDATA #REQUIRED OriginRegularExpression (True|False) "False" NewRegularExpression (True|False) "False" >
+
+<!ELEMENT OriginalValue ( #PCDATA )>
+
+<!ELEMENT NewValue ( #PCDATA )>
+
+<!ELEMENT Hierarchy  (ObjectName, Hierarchy*) >
+<!ATTLIST Hierarchy MicClass CDATA #REQUIRED>
+
+<!ELEMENT ObjectName  ( #PCDATA ) >
+
+<!ELEMENT Step (Obj,Details,Time,(Step|HtmlStep|Doc)*,NodeArgs) >
+<!ATTLIST Step rID ID #REQUIRED retval CDATA #IMPLIED>
+
+<!ELEMENT HtmlStep (HTML,(Step|HtmlStep|Doc)*,NodeArgs) >
+<!ATTLIST HtmlStep rID ID #REQUIRED >
+
+<!ELEMENT Obj ( #PCDATA ) >
+<!ATTLIST Obj plainTxt (False|True) "True">
+
+<!ELEMENT Details ( #PCDATA ) >
+<!ATTLIST Details plainTxt (False|True) "True">
+
+<!ELEMENT Time ( #PCDATA ) >
+
+<!ELEMENT HTML ( #PCDATA ) >
+
+<!ELEMENT Disp ( #PCDATA ) >
+
+<!ELEMENT NodeArgs (Disp,TopPane?,BtmPane?)>
+<!ATTLIST NodeArgs eType CDATA #REQUIRED icon CDATA #REQUIRED nRep CDATA #REQUIRED filter (False|True) "True">
+<!ATTLIST NodeArgs status (Passed|Failed|Done|Warning|Information) "Done">
+<!ATTLIST NodeArgs iconSel CDATA #IMPLIED nType CDATA #IMPLIED MovieMarker CDATA "">
+
+<!ELEMENT TopPane (Path)>
+
+<!ELEMENT BtmPane ( (Path|WR)?,ASHilite?)>
+<!ATTLIST BtmPane vType CDATA "HTML">
+
+<!ELEMENT Path ( #PCDATA ) >
+
+<!ELEMENT ASHilite ( #PCDATA ) >
+
+<!ELEMENT WR ( #PCDATA ) >
+
+<!ELEMENT DT (NodeArgs) >
+<!ATTLIST DT rID ID #REQUIRED>
+
+<!ELEMENT Summary (Param*)>
+<!ATTLIST Summary sTime CDATA #IMPLIED eTime CDATA #IMPLIED passed CDATA #IMPLIED failed CDATA #IMPLIED warnings CDATA #IMPLIED retval CDATA #IMPLIED stopped (False|True) "False" >
+
+<!ELEMENT Param (ParamName,ParamVal)+ >
+<!ATTLIST Param paramInOut (In|Out) "In">
+
+<!ELEMENT ParamName ( #PCDATA ) >
+
+<!ELEMENT ParamVal ( #PCDATA ) >
+
+]
+>
+<Report ver="2.0" tmZone="中国标准时间">
+<General productName="Vugen" productVer="12" os="" host="510-22"><DocLocation><![CDATA[C:\Users\Administrator\Desktop\20142983-1]]></DocLocation></General>
+<Doc rID="T1"   productName= "Vugen"  >
+<DName><![CDATA[20142983-1]]></DName>
+<Res><![CDATA[result1]]></Res>
+<Action rID="T2">
+<AName><![CDATA[vuser_init]]></AName>
+<Summary sTime="2017/6/2 - 11:29:41" eTime="2017/6/2 - 11:29:41" passed="0" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="5" >
+<Disp><![CDATA[vuser_init 概要]]></Disp>
+</NodeArgs>
+</Action>
+<DIter rID="T3" iterID="1" >
+<Action rID="T4">
+<AName><![CDATA[Action]]></AName>
+<Step rID="T5">
+<Obj plainTxt="False" ><![CDATA[Url: index.htm]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>步骤已成功完成</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2017/6/2 - 11:29:41]]></Time>
+<NodeArgs eType="General" icon="4" nRep="9" status="Passed" >
+<Disp><![CDATA[Url: index.htm]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration1\t1.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T6">
+<Obj plainTxt="False" ><![CDATA[Submit Data: login.pl]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>步骤已成功完成</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2017/6/2 - 11:29:42]]></Time>
+<NodeArgs eType="General" icon="5" nRep="10" status="Passed" >
+<Disp><![CDATA[Submit Data: login.pl]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration1\t2.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T7">
+<Obj plainTxt="False" ><![CDATA[Url: Search Flights Button]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>步骤已成功完成</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2017/6/2 - 11:29:42]]></Time>
+<NodeArgs eType="General" icon="4" nRep="11" status="Passed" >
+<Disp><![CDATA[Url: Search Flights Button]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration1\t3.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T8">
+<Obj plainTxt="False" ><![CDATA[Service: Set Sockets Option]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>使用值 <STRONG><FONT COLOR=#00AF00>TLS1.1</FONT></STRONG> 设置套接字选项 <STRONG><FONT COLOR=#00AF00>SSL_VERSION</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2017/6/2 - 11:29:42]]></Time>
+<NodeArgs eType="General" icon="6" nRep="12" >
+<Disp><![CDATA[Service: Set Sockets Option]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T9">
+<Obj plainTxt="False" ><![CDATA[Url: Search Flights Button_2]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>步骤已成功完成</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2017/6/2 - 11:29:42]]></Time>
+<NodeArgs eType="General" icon="4" nRep="13" status="Passed" >
+<Disp><![CDATA[Url: Search Flights Button_2]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration1\t4.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T10">
+<Obj plainTxt="False" ><![CDATA[Url: Search Flights Button_3]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>步骤已成功完成</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2017/6/2 - 11:29:43]]></Time>
+<NodeArgs eType="General" icon="4" nRep="14" status="Passed" >
+<Disp><![CDATA[Url: Search Flights Button_3]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration1\t5.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T11">
+<Obj plainTxt="False" ><![CDATA[Url: IE9CompatViewList.xml]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>步骤已成功完成</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2017/6/2 - 11:29:43]]></Time>
+<NodeArgs eType="General" icon="4" nRep="15" status="Passed" >
+<Disp><![CDATA[Url: IE9CompatViewList.xml]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration1\t6.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T12">
+<Obj plainTxt="False" ><![CDATA[Url: welcome.pl]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>步骤已成功完成</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2017/6/2 - 11:29:44]]></Time>
+<NodeArgs eType="General" icon="4" nRep="16" status="Passed" >
+<Disp><![CDATA[Url: welcome.pl]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration1\t7.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T13">
+<Obj plainTxt="False" ><![CDATA[Submit Data: reservations.pl]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>步骤已成功完成</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2017/6/2 - 11:29:44]]></Time>
+<NodeArgs eType="General" icon="5" nRep="17" status="Passed" >
+<Disp><![CDATA[Submit Data: reservations.pl]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration1\t8.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T14">
+<Obj plainTxt="False" ><![CDATA[Submit Data: reservations.pl_2]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>步骤已成功完成</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2017/6/2 - 11:29:45]]></Time>
+<NodeArgs eType="General" icon="5" nRep="18" status="Passed" >
+<Disp><![CDATA[Submit Data: reservations.pl_2]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration1\t9.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T15">
+<Obj plainTxt="False" ><![CDATA[Submit Data: reservations.pl_3]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>步骤已成功完成</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2017/6/2 - 11:29:45]]></Time>
+<NodeArgs eType="General" icon="5" nRep="19" status="Passed" >
+<Disp><![CDATA[Submit Data: reservations.pl_3]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration1\t10.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T16">
+<Obj plainTxt="False" ><![CDATA[Submit Data: reservations.pl_4]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>步骤已成功完成</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2017/6/2 - 11:29:46]]></Time>
+<NodeArgs eType="General" icon="5" nRep="20" status="Passed" >
+<Disp><![CDATA[Submit Data: reservations.pl_4]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration1\t11.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T17">
+<Obj plainTxt="False" ><![CDATA[Url: SignOff Button]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>步骤已成功完成</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[2017/6/2 - 11:29:46]]></Time>
+<NodeArgs eType="General" icon="4" nRep="21" status="Passed" >
+<Disp><![CDATA[Url: SignOff Button]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration1\t12.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Summary sTime="2017/6/2 - 11:29:41" eTime="2017/6/2 - 11:29:46" passed="12" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="8" status="Passed" >
+<Disp><![CDATA[Action 概要]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="7" status="Passed" >
+<Disp><![CDATA[20142983-1 迭代 1 (行 1)]]></Disp>
+</NodeArgs>
+</DIter>
+<Action rID="T18">
+<AName><![CDATA[vuser_end]]></AName>
+<Summary sTime="2017/6/2 - 11:29:46" eTime="2017/6/2 - 11:29:46" passed="0" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="24" >
+<Disp><![CDATA[vuser_end 概要]]></Disp>
+</NodeArgs>
+</Action>
+<Summary sTime="2017/6/2 - 11:29:35" eTime="2017/6/2 - 11:29:48" passed="12" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartTest" icon="1" nRep="4" status="Passed" >
+<Disp><![CDATA[测试 20142983-1 概要]]></Disp>
+</NodeArgs>
+</Doc>
+</Report>

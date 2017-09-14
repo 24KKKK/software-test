@@ -1,0 +1,6 @@
+#include "globals.h"
+#include "lrun.h"
+#include "SharedParameter.h"
+#include "vuser_init.c"
+#include "Action.c"
+#include "vuser_end.c"

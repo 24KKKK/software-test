@@ -1,0 +1,24 @@
+[t2]
+FileName2=t1f0.html
+FileName5=t1_1_webtours.png
+FileName4=t1_2_mer_login.gif
+FileName6=t1_0_hp_logo.png
+UseFrameIndex=1
+RequestBodyFile=t2_RequestBody.txt
+ContentType=text/html
+URL1=http://127.0.0.1:1080/WebTours/index.htm
+URL2=http://127.0.0.1:1080/WebTours/header.html
+URL3=http://127.0.0.1:1080/cgi-bin/login.pl
+ResponseHeaderFile=t2_ResponseHeader.txt
+URL4=http://127.0.0.1:1080/WebTours/images/mer_login.gif
+URL5=http://127.0.0.1:1080/WebTours/images/webtours.png
+URL6=http://127.0.0.1:1080/WebTours/images/hp_logo.png
+SnapshotXmlFile=snapshot_2.xml
+RequestHeaderFile=t2_RequestHeader.txt
+SaveSnapshotResources=1
+Total=6
+StepName=Submit Data: login.pl
+FrameIndex2=0.0
+FrameIndex3=0.1
+FileName1=t1.html
+FileName3=t2f1.html

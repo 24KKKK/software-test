@@ -1,0 +1,125 @@
+﻿[BasicInfo]
+Title=页面下载时间细分(随时间变化)
+TemplateName=Breakdown_BaseGraph3
+ChartGroup=BreakdownSession
+PerformanceClass=General
+
+[Graph Definitions]
+MainFactTableName=Breakdown_meter
+DefaultDisplayType=Area
+UserGranularity=1
+RoundBarValues=0
+GraphDataCol1=组件名
+TableName=T1677317T
+BasicTableName=
+AbsoluteTime=0
+DisableFilter=0
+SetPieToPercent=0
+DescFromFID=0
+NumSelectStrings=8
+ProduceRealStatis=0
+CompleteMissingValuesWithZeroes=0
+CompleteMissingValues=1
+ForceCompleteValsOnArea=1
+IdsToStrs=1
+StdMonitor=0
+HiddenFunctions=
+NumBasicFilters=0
+NumAdditionalFilters=0
+NumRawDataFilters=0
+HiddenDimensions=
+BasicGroupBy=组件名
+AdditionalGroupBy=
+HasGranularity=1
+YLeftAxisTitle=时间(秒)
+YRightAxisTitle=
+TimeBasedXAxis=1
+XBottomAxisTitle=已用场景时间 mm:ss
+XTopAxisTitle=
+DisplayAsStairs=0
+RawDataDimension=场景已用时间
+Scaling=0
+ZeroValue=0
+CompleteValFromLast=0
+Stacked=1
+BreakdownTree=1
+TransactionBreakdownGraph=0
+BreakdownChartType=BreakdownLine
+
+[SelectString0]
+Dimension=组件 DNS 解析时间
+CountField=
+AggregateFunction=Avg
+ResultSetAggregateFunction=Y Value
+Title=DNS Resolution Time
+ActiveState=1
+
+[SelectString1]
+Dimension=组件连接时间
+CountField=
+AggregateFunction=Avg
+ResultSetAggregateFunction=Y Value
+Title=Connection Time
+ActiveState=1
+
+[SelectString2]
+Dimension=组件 SSL 握手时间
+CountField=
+AggregateFunction=Avg
+ResultSetAggregateFunction=Y Value
+Title=SSL Handshaking Time
+ActiveState=1
+
+[SelectString3]
+Dimension=组件 FTP 身份验证时间
+CountField=
+AggregateFunction=Avg
+ResultSetAggregateFunction=Y Value
+Title=FTP Authentication Time
+ActiveState=1
+
+[SelectString4]
+Dimension=组件第一次缓冲时间
+CountField=
+AggregateFunction=Avg
+ResultSetAggregateFunction=Y Value
+Title=First Buffer Time
+ActiveState=1
+
+[SelectString5]
+Dimension=组件接收时间
+CountField=
+AggregateFunction=Avg
+ResultSetAggregateFunction=Y Value
+Title=Receive Time
+ActiveState=1
+
+[SelectString6]
+Dimension=组件客户端时间
+CountField=
+AggregateFunction=Avg
+ResultSetAggregateFunction=Y Value
+Title=Client Time
+ActiveState=1
+
+[SelectString7]
+Dimension=组件错误时间
+CountField=
+AggregateFunction=Avg
+ResultSetAggregateFunction=Y Value
+Title=Error Time
+ActiveState=1
+
+[DimensionFunctions]
+DimeFuncCount=0
+
+[Granularity]
+Dimension=场景已用时间
+TimeScaleType=2
+Granularity=8
+BaseGranularityUIName=
+MinimumDefaultGranularity=1
+
+[Alerts]
+Number Of Alerts=0
+

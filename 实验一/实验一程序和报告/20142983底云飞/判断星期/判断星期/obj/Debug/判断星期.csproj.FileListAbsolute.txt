@@ -1,0 +1,18 @@
+c:\users\administrator\documents\visual studio 2015\Projects\判断星期\判断星期\bin\Debug\判断星期.exe.config
+c:\users\administrator\documents\visual studio 2015\Projects\判断星期\判断星期\bin\Debug\判断星期.exe
+c:\users\administrator\documents\visual studio 2015\Projects\判断星期\判断星期\bin\Debug\判断星期.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\判断星期\判断星期\obj\Debug\判断星期.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2015\Projects\判断星期\判断星期\obj\Debug\判断星期.Form1.resources
+c:\users\administrator\documents\visual studio 2015\Projects\判断星期\判断星期\obj\Debug\判断星期.Properties.Resources.resources
+c:\users\administrator\documents\visual studio 2015\Projects\判断星期\判断星期\obj\Debug\判断星期.csproj.GenerateResource.Cache
+c:\users\administrator\documents\visual studio 2015\Projects\判断星期\判断星期\obj\Debug\判断星期.exe
+c:\users\administrator\documents\visual studio 2015\Projects\判断星期\判断星期\obj\Debug\判断星期.pdb
+E:\大三下\刘丹-软件测试技术\实验\实验一\实验一程序和报告\判断星期\判断星期\bin\Debug\判断星期.exe.config
+E:\大三下\刘丹-软件测试技术\实验\实验一\实验一程序和报告\判断星期\判断星期\obj\Debug\判断星期.exe
+E:\大三下\刘丹-软件测试技术\实验\实验一\实验一程序和报告\判断星期\判断星期\obj\Debug\判断星期.pdb
+E:\大三下\刘丹-软件测试技术\实验\实验一\实验一程序和报告\判断星期\判断星期\bin\Debug\判断星期.exe
+E:\大三下\刘丹-软件测试技术\实验\实验一\实验一程序和报告\判断星期\判断星期\bin\Debug\判断星期.pdb
+E:\大三下\刘丹-软件测试技术\实验\实验一\实验一程序和报告\判断星期\判断星期\obj\Debug\判断星期.csprojResolveAssemblyReference.cache
+E:\大三下\刘丹-软件测试技术\实验\实验一\实验一程序和报告\判断星期\判断星期\obj\Debug\判断星期.Form1.resources
+E:\大三下\刘丹-软件测试技术\实验\实验一\实验一程序和报告\判断星期\判断星期\obj\Debug\判断星期.Properties.Resources.resources
+E:\大三下\刘丹-软件测试技术\实验\实验一\实验一程序和报告\判断星期\判断星期\obj\Debug\判断星期.csproj.GenerateResource.Cache

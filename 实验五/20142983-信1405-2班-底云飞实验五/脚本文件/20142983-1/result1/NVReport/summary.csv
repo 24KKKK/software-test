@@ -1,0 +1,4 @@
+Transaction Name,Flow Name,Packet List Name,Transaction Duration (seconds),Network Time (seconds) ,Throughput Up (KB),Throughput Down (KB),Number of Requests,Errors,Analysis Score (Desktop) ,Analysis Score (Mobile) ,Transaction HTML Report Name
+vuser_init,,,0.1,0.0,0.0,0.0,0,0,N\A (no HTTP traffic),N\A (no HTTP traffic),report0.html
+Action_iteration_1,,,5.5,0.3,0.2,14.3,1,0,100.0,100.0,report1.html
+vuser_end,,,0.1,0.0,0.0,0.0,0,0,N\A (no HTTP traffic),N\A (no HTTP traffic),report2.html

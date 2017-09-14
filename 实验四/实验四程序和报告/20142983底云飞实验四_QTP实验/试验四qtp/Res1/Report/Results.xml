@@ -1,0 +1,367 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Report
+[
+<!ELEMENT Report (General ,(Doc|BPT)) >
+<!ATTLIST Report ver CDATA #REQUIRED tmZone CDATA #REQUIRED>
+
+<!ELEMENT General ( DocLocation ) >
+<!ATTLIST General productName CDATA #REQUIRED productVer CDATA #REQUIRED os CDATA #REQUIRED host CDATA #REQUIRED qcserver CDATA #IMPLIED qcproject CDATA #IMPLIED  >
+
+<!ELEMENT BPT (DName,Res,DVer?,TSet?,TInst?,NodeArgs,AdditionalInfo*,Doc*) >
+<!ATTLIST BPT rID ID #REQUIRED >
+
+<!ELEMENT Doc (DName,ConfName?,Res,DVer?,TSet?,TInst?,RunType?,DT?,AdditionalInfo*,Step*,DIter*,Step*,Action*,Doc*,Summary?,TestMaintenanceSummary*,NodeArgs?) >
+<!ATTLIST Doc rID ID #REQUIRED type (Test|BC|BPTWrapperTest|Flow|Group) "Test" productName CDATA #REQUIRED BCIter CDATA #IMPLIED >
+
+<!ELEMENT RunType ( #PCDATA )>
+<!ATTLIST RunType fmStep (False|True) "False" batch (False|True) "False" upDesc (False|True) "False" upChk (False|True) "False" upAS (False|True) "False">
+
+<!ELEMENT DName ( #PCDATA ) >
+
+<!ELEMENT ConfName ( #PCDATA ) >
+
+<!ELEMENT Res ( #PCDATA ) >
+
+<!ELEMENT AdditionalInfo (AdditionalDataName,AdditionalDataValue ) >
+
+<!ELEMENT AdditionalDataName ( #PCDATA ) >
+
+<!ELEMENT AdditionalDataValue ( #PCDATA ) >
+
+<!ELEMENT DVer ( #PCDATA ) >
+
+<!ELEMENT TSet ( #PCDATA ) >
+
+<!ELEMENT TInst ( #PCDATA ) >
+
+<!ELEMENT DIter (Step*,Action+,Summary?,NodeArgs)>
+<!ATTLIST DIter rID ID #REQUIRED iterID CDATA #REQUIRED>
+
+<!ELEMENT DocLocation ( #PCDATA )>
+
+<!ELEMENT Action (AName,AIter*,(Step|HtmlStep|Action)*,Summary,ActionMaintenanceSummary*,NodeArgs ) >
+<!ATTLIST Action rID ID #REQUIRED>
+
+<!ELEMENT AIter ((Step|HtmlStep|Action)*,Summary?,NodeArgs) >
+<!ATTLIST AIter rID ID #REQUIRED iterID CDATA #REQUIRED>
+
+<!ELEMENT AName ( #PCDATA ) >
+
+<!ELEMENT TestMaintenanceSummary (ActionMaintenanceSummary*) >
+<!ATTLIST TestMaintenanceSummary ObjectsAdded CDATA #REQUIRED ObjectsUpdated CDATA #REQUIRED StepsUpdated CDATA #REQUIRED StepsComments CDATA #REQUIRED><!ELEMENT ActionMaintenanceSummary (ObjectChange* ) >
+<!ATTLIST ActionMaintenanceSummary Action CDATA #REQUIRED Objects CDATA #REQUIRED Updated CDATA #REQUIRED LinesTotal CDATA #REQUIRED Added CDATA #REQUIRED LinesUpdated CDATA #REQUIRED>
+
+<!ELEMENT ObjectChange  (Hierarchy, PropertyChangeList* ) >
+<!ATTLIST ObjectChange Operation CDATA #IMPLIED OriginalRepository CDATA #IMPLIED>
+
+<!ELEMENT PropertyChangeList (PropertyDef*) >
+
+<!ELEMENT PropertyDef (OriginalValue, NewValue) >
+<!ATTLIST PropertyDef PropName CDATA #REQUIRED OriginRegularExpression (True|False) "False" NewRegularExpression (True|False) "False" AddedProperty (True|False) "False" >
+
+<!ELEMENT OriginalValue ( #PCDATA )>
+
+<!ELEMENT NewValue ( #PCDATA )>
+
+<!ELEMENT Hierarchy  (ObjectName, Hierarchy*) >
+<!ATTLIST Hierarchy MicClass CDATA #REQUIRED>
+
+<!ELEMENT ObjectName  ( #PCDATA ) >
+
+<!ELEMENT Step (Obj,Details,Time,TimeTick* ,(Step|HtmlStep|Doc)*,NodeArgs) >
+<!ATTLIST Step rID ID #REQUIRED retval CDATA #IMPLIED>
+
+<!ELEMENT HtmlStep (HTML,TimeTick*,(Step|HtmlStep|Doc)*,NodeArgs) >
+<!ATTLIST HtmlStep rID ID #REQUIRED >
+
+<!ELEMENT Obj ( #PCDATA ) >
+<!ATTLIST Obj plainTxt (False|True) "True">
+
+<!ELEMENT Details ( #PCDATA ) >
+<!ATTLIST Details plainTxt (False|True) "True">
+
+<!ELEMENT Time ( #PCDATA ) >
+
+<!ELEMENT HTML ( #PCDATA ) >
+
+<!ELEMENT Disp ( #PCDATA ) >
+
+<!ELEMENT TimeTick ( #PCDATA ) >
+
+<!ELEMENT NodeArgs (Disp,TopPane?,BtmPane?,ExtendedInfo? )>
+<!ATTLIST NodeArgs eType CDATA #REQUIRED icon CDATA #REQUIRED nRep CDATA #REQUIRED UserNote CDATA #IMPLIED filter (False|True) "True">
+<!ATTLIST NodeArgs status (Passed|Failed|Done|Warning|Information) "Done">
+<!ATTLIST NodeArgs iconSel CDATA #IMPLIED nType CDATA #IMPLIED MovieMarker CDATA "">
+<!ATTLIST NodeArgs Source CDATA #IMPLIED SourceLine CDATA #IMPLIED >
+
+<!ELEMENT TopPane (Path)>
+
+<!ELEMENT BtmPane ( (Path|WR)?,ASHilite?)>
+<!ATTLIST BtmPane vType CDATA "HTML">
+
+<!ELEMENT Path ( #PCDATA ) >
+
+<!ELEMENT ASHilite ( #PCDATA ) >
+
+<!ELEMENT WR ( #PCDATA ) >
+
+<!ELEMENT ExtendedInfo ( StepData ) >
+
+<!ATTLIST ExtendedInfo StepType CDATA #REQUIRED>
+<!ELEMENT DT (NodeArgs) >
+<!ATTLIST DT rID ID #REQUIRED>
+
+<!ELEMENT Summary (Param*)>
+<!ATTLIST Summary sTime CDATA #IMPLIED eTime CDATA #IMPLIED passed CDATA #IMPLIED failed CDATA #IMPLIED warnings CDATA #IMPLIED retval CDATA #IMPLIED stopped (False|True) "False" >
+
+<!ELEMENT Param (ParamName,ParamVal)+ >
+<!ATTLIST Param paramInOut (In|Out) "In">
+
+<!ELEMENT ParamName ( #PCDATA ) >
+
+<!ELEMENT ParamVal ( #PCDATA ) >
+
+]
+>
+<Report ver="2.0" tmZone="中国标准时间">
+<General productName="QuickTest Professional" productVer="11.00" os="Windows 7" host="WIN-F01A4Q8JJ56"><DocLocation><![CDATA[C:\Users\Rock\AppData\Local\Temp\~tlp4\~Test1]]></DocLocation></General>
+<Doc rID="T1"   productName= "QuickTest Professional"  >
+<DName><![CDATA[Test]]></DName>
+<Res><![CDATA[Res1]]></Res>
+<DT rID="T2">
+<NodeArgs eType="Table" icon="2" nRep="4" filter="False" >
+<Disp><![CDATA[Run-Time Data Table]]></Disp>
+<BtmPane vType="Table">
+<Path><![CDATA[Default.xls]]></Path>
+</BtmPane>
+</NodeArgs>
+</DT>
+<DIter rID="T3" iterID="1" >
+<Step rID="T4">
+<Obj plainTxt="False" ><![CDATA[StartUp Browser]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[2017/5/30 - 20:32:53]]></Time>
+<TimeTick>1496147573</TimeTick>
+<Step rID="T5">
+<Obj plainTxt="False" ><![CDATA[StartUp Browser]]></Obj>
+<Details plainTxt="False" ><![CDATA[Navigate to http://www.stdu.edu.cn/]]></Details>
+<Time><![CDATA[2017/5/30 - 20:32:53]]></Time>
+<TimeTick>1496147573</TimeTick>
+<NodeArgs eType="Replay" icon="4" nRep="9" nType="Navigate to http://www.stdu.edu.cn/" Source="Action0" SourceLine="-1" >
+<Disp><![CDATA[StartUp Browser]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T6">
+<Obj plainTxt="False" ><![CDATA[StartUp Browser.Sync]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[2017/5/30 - 20:32:58]]></Time>
+<TimeTick>1496147578</TimeTick>
+<NodeArgs eType="Replay" icon="4" nRep="11" Source="Action0" SourceLine="-1" >
+<Disp><![CDATA[StartUp Browser.Sync]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="4" nRep="8" Source="Action0" SourceLine="-1" >
+<Disp><![CDATA[StartUp Browser]]></Disp>
+</NodeArgs>
+</Step>
+<Action rID="T7">
+<AName><![CDATA[Action1]]></AName>
+<Step rID="T8">
+<Obj plainTxt="False" ><![CDATA[石家庄铁道大学 - 网站首页]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[2017/5/30 - 20:32:59]]></Time>
+<TimeTick>1496147579</TimeTick>
+<Step rID="T9">
+<Obj plainTxt="False" ><![CDATA["石家庄铁道大学 - 网站首页"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (3 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (3 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=石家庄铁道大学 - 网站首页<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=石家庄铁道大学 - 网站首页<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.stdu.edu.cn<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=石家庄铁道大学 - 网站首页<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>hasstatusbar=-1<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>hasmenubar=-1<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>hastoolbar=-1<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=-1<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=1<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[2017/5/30 - 20:32:59]]></Time>
+<TimeTick>1496147579</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="15" Source="Action1" SourceLine="0" >
+<Disp><![CDATA["石家庄铁道大学 - 网站首页"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T10">
+<Obj plainTxt="False" ><![CDATA[石家庄铁道大学 - 网站首页]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[2017/5/30 - 20:32:59]]></Time>
+<TimeTick>1496147579</TimeTick>
+<Step rID="T11">
+<Obj plainTxt="False" ><![CDATA[信息服务.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[2017/5/30 - 20:32:59]]></Time>
+<TimeTick>1496147579</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="18" Source="Action1" SourceLine="0" >
+<Disp><![CDATA[信息服务.Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="7" nRep="17" Source="Action1" SourceLine="0" >
+<Disp><![CDATA[石家庄铁道大学 - 网站首页]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T12">
+<Obj plainTxt="False" ><![CDATA[石家庄铁道大学 - 信息服务]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[2017/5/30 - 20:33:02]]></Time>
+<TimeTick>1496147582</TimeTick>
+<Step rID="T13">
+<Obj plainTxt="False" ><![CDATA[自助服务.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[2017/5/30 - 20:33:02]]></Time>
+<TimeTick>1496147582</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="22" Source="Action1" SourceLine="1" >
+<Disp><![CDATA[自助服务.Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="7" nRep="21" Source="Action1" SourceLine="1" >
+<Disp><![CDATA[石家庄铁道大学 - 信息服务]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="4" nRep="14" Source="Action1" SourceLine="0" >
+<Disp><![CDATA[石家庄铁道大学 - 网站首页]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T14">
+<Obj plainTxt="False" ><![CDATA[网站首页]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[2017/5/30 - 20:33:05]]></Time>
+<TimeTick>1496147585</TimeTick>
+<Step rID="T15">
+<Obj plainTxt="False" ><![CDATA["网站首页"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (4 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (4 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=网站首页<SPAN class=passed> (Used</SPAN>, 2 matches)</SPAN><br>title=网站首页<SPAN class=passed> (Used</SPAN>, 2 matches)</SPAN><br>openurl=http://info.stdu.edu.cn<SPAN class=passed> (Used</SPAN>, 2 matches)</SPAN><br>opentitle=网站首页<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>hasstatusbar=-1<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>hasmenubar=-1<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>hastoolbar=-1<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=1<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[2017/5/30 - 20:33:05]]></Time>
+<TimeTick>1496147585</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="25" Source="Action1" SourceLine="2" >
+<Disp><![CDATA["网站首页"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T16">
+<Obj plainTxt="False" ><![CDATA[网站首页]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[2017/5/30 - 20:33:05]]></Time>
+<TimeTick>1496147585</TimeTick>
+<Step rID="T17">
+<Obj plainTxt="False" ><![CDATA[username.Set]]></Obj>
+<Details plainTxt="False" ><![CDATA["20142983"]]></Details>
+<Time><![CDATA[2017/5/30 - 20:33:05]]></Time>
+<TimeTick>1496147585</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="28" Source="Action1" SourceLine="2" >
+<Disp><![CDATA[username.Set]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T18">
+<Obj plainTxt="False" ><![CDATA[password.SetSecure]]></Obj>
+<Details plainTxt="False" ><![CDATA["592d66240d51492dc3412a2d01d530365e8d"]]></Details>
+<Time><![CDATA[2017/5/30 - 20:33:06]]></Time>
+<TimeTick>1496147586</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="31" Source="Action1" SourceLine="3" >
+<Disp><![CDATA[password.SetSecure]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T19">
+<Obj plainTxt="False" ><![CDATA[登录.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[2017/5/30 - 20:33:06]]></Time>
+<TimeTick>1496147586</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="34" Source="Action1" SourceLine="4" >
+<Disp><![CDATA[登录.Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="7" nRep="27" Source="Action1" SourceLine="2" >
+<Disp><![CDATA[网站首页]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T20">
+<Obj plainTxt="False" ><![CDATA[校园网自助服务平台]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[2017/5/30 - 20:33:12]]></Time>
+<TimeTick>1496147592</TimeTick>
+<Step rID="T21">
+<Obj plainTxt="False" ><![CDATA[使用帮助.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[2017/5/30 - 20:33:12]]></Time>
+<TimeTick>1496147592</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="38" Source="Action1" SourceLine="5" >
+<Disp><![CDATA[使用帮助.Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="7" nRep="37" Source="Action1" SourceLine="5" >
+<Disp><![CDATA[校园网自助服务平台]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T22">
+<Obj plainTxt="False" ><![CDATA[使用帮助]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[2017/5/30 - 20:33:13]]></Time>
+<TimeTick>1496147593</TimeTick>
+<Step rID="T23">
+<Obj plainTxt="False" ><![CDATA[Windows7 IP地址设置.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[2017/5/30 - 20:33:13]]></Time>
+<TimeTick>1496147593</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="42" Source="Action1" SourceLine="6" >
+<Disp><![CDATA[Windows7 IP地址设置.Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="7" nRep="41" Source="Action1" SourceLine="6" >
+<Disp><![CDATA[使用帮助]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T24">
+<Obj plainTxt="False" ><![CDATA[Windows7 IP地址设置]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[2017/5/30 - 20:33:16]]></Time>
+<TimeTick>1496147596</TimeTick>
+<Step rID="T25">
+<Obj plainTxt="False" ><![CDATA[下页 >.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[2017/5/30 - 20:33:16]]></Time>
+<TimeTick>1496147596</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="46" Source="Action1" SourceLine="7" >
+<Disp><![CDATA[下页 >.Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="7" nRep="45" Source="Action1" SourceLine="7" >
+<Disp><![CDATA[Windows7 IP地址设置]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T26">
+<Obj plainTxt="False" ><![CDATA[校园网宿舍环路定义]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[2017/5/30 - 20:33:17]]></Time>
+<TimeTick>1496147597</TimeTick>
+<Step rID="T27">
+<Obj plainTxt="False" ><![CDATA[退出.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[2017/5/30 - 20:33:17]]></Time>
+<TimeTick>1496147597</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="50" Source="Action1" SourceLine="8" >
+<Disp><![CDATA[退出.Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="7" nRep="49" Source="Action1" SourceLine="8" >
+<Disp><![CDATA[校园网宿舍环路定义]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="4" nRep="24" Source="Action1" SourceLine="2" >
+<Disp><![CDATA[网站首页]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="2017/5/30 - 20:32:58" eTime="2017/5/30 - 20:33:17" passed="0" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="5" nRep="12" >
+<Disp><![CDATA[Action1 Summary]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="6" >
+<Disp><![CDATA[Test Iteration 1 (Row 1)]]></Disp>
+</NodeArgs>
+</DIter>
+<Summary sTime="2017/5/30 - 20:32:50" eTime="2017/5/30 - 20:33:17" passed="0" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartTest" icon="1" nRep="3" >
+<Disp><![CDATA[Test Test Summary]]></Disp>
+</NodeArgs>
+</Doc>
+</Report>
